@@ -7,7 +7,7 @@ export default function Home() {
         <div className="">
           <h1 className="text-7xl">Diniz Executivo Loovi</h1>
 
-          <div className="bg-slate-100 rounded-xl p-10 mt-8 text-black">
+          <div className="bg-slate-100 rounded-xl p-10 mt-8 text-black shadow-2xl">
             <h2 className="text-3xl">
               O seguro auto mais rápido e querido do Brasil!
             </h2>
