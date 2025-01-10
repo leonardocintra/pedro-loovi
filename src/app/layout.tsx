@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,23 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <footer className="text-center mt-10 space-y-4 my-8">
+          <div className="text-lg">
+            2024 - {new Date().getFullYear()} | Diniz Executivo Loovi
+            <br />
+            Todos os direitos reservados
+          </div>
+          <div>
+            Desenvolvido por{" "}
+            <Link
+              href={"https://www.leonardocintra.com.br/"}
+              className="underline hover:font-bold"
+              target="_blank"
+            >
+              Leonardo Cintra
+            </Link>
+          </div>
+        </footer>
       </body>
     </html>
   );
