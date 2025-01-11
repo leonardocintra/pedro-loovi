@@ -2,7 +2,6 @@ import Coberturas from "@/components/Coberturas";
 import Link from "next/link";
 import { FaCarCrash } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
-import { GiBandit } from "react-icons/gi";
 
 export default function Home() {
   return (
