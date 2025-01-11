@@ -1,7 +1,6 @@
+import BotaoWhastapp from "@/components/ButtonWhataspp";
 import Coberturas from "@/components/Coberturas";
-import Link from "next/link";
 import { FaCarCrash } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -34,18 +33,7 @@ export default function Home() {
               </h2>
 
               <div className="flex justify-between text-white mt-7 space-x-2 sm:space-x-8">
-                <div className="bg-background p-3 rounded-full text-3xl">
-                  <Link
-                    className="flex items-center space-x-2"
-                    target="_blank"
-                    href={`https://wa.me/5516982102169?text=Ola Pedro! Gostaria de mais informações sobre o seguro`}
-                  >
-                    <div>
-                      <FaWhatsapp className="" />
-                    </div>
-                    <div>WhastApp</div>
-                  </Link>
-                </div>
+                <BotaoWhastapp texto="Whatsapp" />
               </div>
             </div>
           </div>

@@ -1,16 +1,16 @@
 import Image from "next/image";
 
 const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
+  { name: "Site oficial", href: "https://loovi.com.br/" },
+  { name: "Instagram", href: "#" },
+  { name: "Nossos valores", href: "#" },
+  { name: "Entre em contato", href: "#" },
 ];
 const stats = [
-  { name: "Offices worldwide", value: "12" },
-  { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "40" },
-  { name: "Paid time off", value: "Unlimited" },
+  { name: "Clientes atendidos", value: "2400+" },
+  { name: "Seguros acionados", value: "300+" },
+  { name: "Horario de atendimento", value: "24h" },
+  { name: "Atendimento", value: "100% digital!" },
 ];
 
 export default function FooterComponent() {
@@ -20,7 +20,7 @@ export default function FooterComponent() {
         alt="loovi"
         width={2000}
         height={2000}
-        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+        src="/img/escritorio.jpg"
         className="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
       />
       <div
