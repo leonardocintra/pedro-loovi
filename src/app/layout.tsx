@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import FooterComponent from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <FooterComponent />
         <footer className="text-center mt-10 space-y-4 my-8">
           <div className="text-lg">
             2024 - {new Date().getFullYear()} | Diniz Executivo Loovi
