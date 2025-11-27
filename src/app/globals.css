@@ -4,13 +4,16 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #292B33;
+  --loovi-green: #25d366;
+  --loovi-dark: #292B33;
+  --loovi-pink: #ff0066;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #5968fa;
-    --foreground: #ededed;
+    --background: #ffffff; /* Force light mode background for now to keep control */
+    --foreground: #292B33;
   }
 }
 

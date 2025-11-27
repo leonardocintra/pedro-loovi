@@ -42,42 +42,37 @@ const coberturas = [
 
 export default function Coberturas() {
   return (
-    <div className="bg-white flex justify-center">
-      <div className="sm:w-1/2 mb-2">
-        <div className="rounded-md px-8">
-          <h3 className="text-background text-center text-4xl mt-8 font-mono mb-3">
+    <div className="flex justify-center">
+      <div className="w-full max-w-4xl">
+        <div className="rounded-md px-4 sm:px-8">
+          <h3 className="text-[#292B33] text-center text-3xl sm:text-4xl mt-8 font-bold mb-10">
             Coberturas
           </h3>
 
           <div className="flex justify-center flex-col items-center">
-            <ul role="list" className="divide-y divide-gray-100">
+            <ul role="list" className="divide-y divide-gray-200 w-full">
               {coberturas.map((cobertura, index) => (
-                <li key={index} className="flex justify-between gap-x-6 py-5">
-                  <div className="flex min-w-0 gap-x-4">
+                <li key={index} className="flex flex-col sm:flex-row gap-4 sm:gap-6 py-6 items-start sm:items-center">
+                  <div className="flex-shrink-0">
                     <Image
                       alt={cobertura.titulo}
                       src={cobertura.imageUrl}
                       width={200}
                       height={200}
-                      className="size-16 sm:size-20 flex-none rounded-full bg-gray-50"
+                      className="size-16 sm:size-20 rounded-2xl object-cover shadow-md"
                     />
-                    <div className="min-w-0 flex-auto">
-                      <p className="text-sm/6 font-semibold text-gray-900">
-                        {cobertura.titulo}
-                      </p>
-                      <p className="mt-1 text-xs/5 text-gray-500">
-                        {cobertura.subTitulo}
-                      </p>
-                    </div>
+                  </div>
+                  <div className="min-w-0 flex-auto">
+                    <p className="text-lg font-bold text-[#292B33]">
+                      {cobertura.titulo}
+                    </p>
+                    <p className="mt-1 text-sm sm:text-base text-gray-600 leading-relaxed">
+                      {cobertura.subTitulo}
+                    </p>
                   </div>
                 </li>
               ))}
             </ul>
-
-            <div className="max-w-md flex justify-center pt-8 mb-8">
-              <BotaoWhastapp texto="Cotar agora" />
-            </div>
-
           </div>
         </div>
       </div>
